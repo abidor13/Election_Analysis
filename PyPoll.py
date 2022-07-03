@@ -115,6 +115,9 @@ print(candidate_votes)
 for candidate_name in candidate_votes:
     votes = candidate_votes[candidate_name]
     vote_percentage = float(votes) / float(total_votes) * 100
+    # Print each candidate, their voter count, and percentage to the
+    # terminal.
+    print(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
 
 
 
@@ -137,5 +140,5 @@ for candidate_name in candidate_votes:
     f"Winning Vote Count: {winning_count:,}\n"
     f"Winning Percentage: {winning_percentage:.1f}%\n"
     f"-------------------------\n")
-print(winning_candidate_summary)
+    print(winning_candidate_summary)
 
